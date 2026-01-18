@@ -50,6 +50,7 @@ nav ul li {
     background-color: rgba(70, 145, 101, 1);
     color: #ffffff;
     border: none;
+    border-radius: 8px;
 }
 
 #imgnav {
@@ -440,13 +441,14 @@ h1 span {
 .footer-social {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 16px;
 }
 
 .footer-social p {
+    text-align: left;
     font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: -12px;
     font-weight: 500;
     color: #ffffff;
@@ -491,4 +493,33 @@ h1 span {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     margin-top: -50px;
+}
+
+
+/*
+   BUTTON HOVER EFFECTS
+ */
+
+
+button {
+    cursor: pointer;
+}
+
+.btn,
+#navbutton,
+.early-btn {
+    transition: all 0.25s ease;
+}
+
+.primary:hover,
+#navbutton:hover,
+.early-btn:hover {
+    background: rgba(56, 120, 84, 1);
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 30px rgba(70, 145, 101, 0.35);
+}
+
+.secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.8);
 }
